@@ -1,0 +1,27 @@
+{
+  "name": "web-nuegas_task_management",
+  "version": "1.0.0",
+  "description": "This repository contains a web development project called 'Nuegas Task Management'-. Tech skills: HTML, CSS, JavaScript, React, TailwindCSS and Parceljs.",
+  "repository": "git@github.com:M-oliveda/Web-NuegasTaskManagement.git",
+  "author": "Mauricio Oliveda <maurioliveda@gmail.com>",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "test:cli": "echo 'Hello world!'",
+    "format": "prettier 'web/src/**/*.{html,css,js,jsx}' --write",
+    "format:check": "prettier --check 'web/src/**/*.{html,css,js,jsx}'",
+    "parcel:dev": "parcel './web/src/index.html' --dist-dir './web/dist' --no-source-maps",
+    "parcel:build": "parcel build './web/src/index.html' --dist-dir './web/public' --no-source-maps"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.6"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
