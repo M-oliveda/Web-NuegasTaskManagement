@@ -1,3 +1,5 @@
+import Header from "../../layouts/Header";
+
 export default function Dashboard() {
-  return <p>Hello, this is the dashboard page.</p>;
+  return <Header />;
 }

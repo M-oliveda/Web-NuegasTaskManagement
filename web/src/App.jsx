@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./pages/dashboard";
+import { StrictMode } from "react";
+import UserContextProvider from "./components/UserContextProvider";
 
 const webRouter = createBrowserRouter([
   {
@@ -13,5 +15,11 @@ const webRouter = createBrowserRouter([
 ]);
 
 export default function App() {
-  return <RouterProvider router={webRouter} />;
+  return (
+    <StrictMode>
+      <UserContextProvider>
+        <RouterProvider router={webRouter} />
+      </UserContextProvider>
+    </StrictMode>
+  );
 }
