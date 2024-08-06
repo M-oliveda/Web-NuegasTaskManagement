@@ -1,0 +1,26 @@
+[
+  {
+    "completedDate": "2024-07-31T10:15:00",
+    "completedTasks": 8
+  },
+  {
+    "completedDate": "2024-08-01T11:00:00",
+    "completedTasks": 12
+  },
+  {
+    "completedDate": "2024-08-02T12:45:00",
+    "completedTasks": 7
+  },
+  {
+    "completedDate": "2024-08-03T13:30:00",
+    "completedTasks": 10
+  },
+  {
+    "completedDate": "2024-08-04T14:15:00",
+    "completedTasks": 6
+  },
+  {
+    "completedDate": "2024-08-05T15:00:00",
+    "completedTasks": 9
+  }
+]
