@@ -1,4 +1,5 @@
 import { default as tasksDB } from "../data/tasks.json";
+import { default as tasksAnalytics } from "../data/tasksAnalytics.json";
 
 export default async function getTotalTasks() {
   const totalTasks = tasksDB.length;
@@ -22,4 +23,15 @@ export default async function getTotalTasks() {
     completedTasks,
     pendingTasks,
   };
+}
+
+export async function getTasksByDate() {
+  return tasksAnalytics.map((task) => {
+    const days = ["U", "M", "T", "W", "T", "F", "S"];
+    const date = new Date(task.completedDate);
+    const day = days[date.getDay()];
+    const { completedTasks } = task;
+
+    return { day, completedTasks };
+  }, []);
 }
