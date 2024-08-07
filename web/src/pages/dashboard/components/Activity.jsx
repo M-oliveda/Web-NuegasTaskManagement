@@ -27,10 +27,12 @@ export default function Activity() {
           <>
             <div className="mb-5 flex items-center justify-between">
               <p className="font-semibold text-secondary">Activity</p>
-              <select className="bg-transparent font-semibold text-secondary">
-                <option selected value={"this-week"}>
-                  This Week
-                </option>
+              <select
+                className="bg-transparent font-semibold text-secondary"
+                disabled
+                defaultValue={"This Week"}
+              >
+                <option value={"this-week"}>This Week</option>
                 <option value={"this-month"}>This Month</option>
                 <option value={"this-year"}>This Year</option>
               </select>
