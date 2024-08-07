@@ -14,7 +14,7 @@ export default function CircularProgress({ children, percentage }) {
             r="16"
             fill="none"
             className="stroke-primary opacity-10"
-            stroke-width="2"
+            strokeWidth="2"
           ></circle>
           {/* <!-- Progress Circle --> */}
           <circle
@@ -23,10 +23,10 @@ export default function CircularProgress({ children, percentage }) {
             r="16"
             fill="none"
             className="stroke-primary"
-            stroke-width="3"
-            stroke-dasharray="100"
-            stroke-dashoffset={100 - percentage}
-            stroke-linecap="round"
+            strokeWidth="3"
+            strokeDasharray="100"
+            strokeDashoffset={100 - percentage}
+            strokeLinecap="round"
           ></circle>
         </svg>
 
