@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    background-color: #fcfcfc;
+  }
+}
+
 /* CSS styles related to the initial loader... */
 @keyframes rotation {
   0% {
