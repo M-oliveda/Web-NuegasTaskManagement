@@ -5,6 +5,7 @@ import Header from "../../layouts/Header";
 import { UserContext } from "../../context/UserContext";
 import Activity from "./components/Activity";
 import MentorsSection from "./layouts/MentorsSection";
+import UpcomingTasksSection from "./layouts/UpcomingTasksSection";
 
 export default function Dashboard() {
   const { user } = useContext(UserContext);
@@ -41,6 +42,7 @@ export default function Dashboard() {
       </TasksContextProvider>
       <Activity />
       <MentorsSection />
+      <UpcomingTasksSection />
     </>
   );
 }
