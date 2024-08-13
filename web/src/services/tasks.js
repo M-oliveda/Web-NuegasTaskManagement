@@ -1,6 +1,6 @@
 import { default as tasksDB } from "../data/tasks.json";
 import { default as tasksAnalytics } from "../data/tasksAnalytics.json";
-import { timeLeft } from "../utils";
+import { months, timeLeft, weekdays } from "../utils";
 
 export default async function getTotalTasks() {
   const totalTasks = tasksDB.length;
@@ -42,4 +42,91 @@ export async function getFutureTasks() {
     const limitDate = new Date(task.timeLimit);
     return limitDate > Date.now();
   });
+}
+
+export async function getTasks(limit = null) {
+  return tasksDB.reduce((accumulator, currentTask) => {
+    const date = new Date(currentTask.createdAt);
+    const year = date.getFullYear();
+    const month = months[date.getMonth()];
+    const weekday = weekdays[date.getDay()];
+
+    if (!accumulator.find((taskByYear) => taskByYear.year === year)) {
+      return accumulator.concat({
+        year,
+        months: [
+          {
+            name: month,
+            tasksByWeek: {
+              [weekday]: [currentTask],
+            },
+          },
+        ],
+      });
+    } else {
+      const yearIndex = accumulator.findIndex(
+        (taskByYear) => taskByYear.year == year,
+      );
+      if (
+        !accumulator[yearIndex].months.find(
+          (tasksByMonth) => tasksByMonth.name == month,
+        )
+      ) {
+        const yearIndex = accumulator.findIndex(
+          (taskByYear) => taskByYear.year == year,
+        );
+        accumulator[yearIndex].months.push({
+          name: month,
+          tasksByWeek: {
+            [weekday]: [currentTask],
+          },
+        });
+      } else {
+        const monthIndex = accumulator[yearIndex].months.findIndex(
+          (tasksByMonth) => tasksByMonth.name == month,
+        );
+        if (
+          !accumulator[yearIndex].months[monthIndex].tasksByWeek.hasOwnProperty(
+            weekday,
+          )
+        ) {
+          accumulator[yearIndex].months[monthIndex].tasksByWeek[weekday] = [
+            currentTask,
+          ];
+        } else {
+          accumulator[yearIndex].months[monthIndex].tasksByWeek[weekday].push(
+            currentTask,
+          );
+        }
+      }
+    }
+
+    return accumulator;
+  }, []);
+}
+
+export async function getTasksWithFilters(
+  filterYear = null,
+  filterMonth = null,
+) {
+  const tasks = await getTasks();
+  let filteredTaks = null;
+
+  if (filterYear) {
+    filteredTaks = tasks.filter(
+      (tasksByYear) => tasksByYear.year == filterYear,
+    )[0];
+
+    if (filterMonth) {
+      filteredTaks.months = filteredTaks.months.filter(
+        (tasksByMonth) => tasksByMonth.name == filterMonth,
+      );
+    }
+  }
+
+  if (filteredTaks) {
+    return filteredTaks;
+  } else {
+    return false;
+  }
 }
