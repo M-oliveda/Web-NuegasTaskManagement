@@ -14,8 +14,6 @@ export default function TaskCalendar() {
   const [selectedYearMonth, setSelectedYearMonth] = useState(null);
   const [selectedWeek, setSelectedWeek] = useState(null);
 
-  const [selectedMonth, setSelectedMonth] = useState(null);
-
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
   }, [emblaApi]);
@@ -100,11 +98,16 @@ export default function TaskCalendar() {
         {selectedWeek &&
           Object.keys(selectedWeek.months[0].tasksByWeek).map((key) => (
             <TaskItem
-              key={selectedWeek.months[0].tasksByWeek[key]}
-              date={selectedWeek.months[0].tasksByWeek[key][0].createdAt}
-              tasksNumber={
-                Object.keys(selectedWeek.months[0].tasksByWeek).length
+              key={key}
+              weekday={
+                weekdays[
+                  new Date(
+                    selectedWeek.months[0].tasksByWeek[key][0].createdAt,
+                  ).getDay()
+                ]
               }
+              date={selectedWeek.months[0].tasksByWeek[key][0].createdAt}
+              tasks={selectedWeek.months[0].tasksByWeek[key]}
             />
           ))}
       </div>
@@ -113,20 +116,22 @@ export default function TaskCalendar() {
 }
 
 function TaskItem(props) {
-  const { setSelectedTask, selectedTask } = useContext(TasksByDateContext);
+  const { tasksToDisplay, setTasksToDisplay } = useContext(TasksByDateContext);
   return (
     <button
       type="button"
-      className={`flex flex-col items-center gap-3 px-[4px] py-[6px] ${props.date == selectedTask && "rounded-3xl bg-secondary"} transition-colors duration-500`}
-      onClick={() => setSelectedTask(props.date)}
+      className={`flex flex-col items-center gap-3 px-[4px] py-[6px] ${tasksToDisplay && props.weekday === tasksToDisplay.weekday && "rounded-3xl bg-secondary"} transition-colors duration-500`}
+      onClick={() =>
+        setTasksToDisplay({ weekday: props.weekday, tasks: props.tasks })
+      }
     >
       <span
-        className={`text-xs font-medium ${props.date == selectedTask ? "text-white" : "text-secondary"}`}
+        className={`text-xs font-medium ${tasksToDisplay && props.weekday === tasksToDisplay.weekday ? "text-white" : "text-secondary"}`}
       >
-        {weekdays[new Date(props.date).getDay()]}
+        {props.weekday}
       </span>
       <span
-        className={`h-8 w-8 rounded-full p-2 text-center text-xs font-medium ${props.date == selectedTask ? "bg-primary text-white" : "bg-[#F5F5F7] text-secondary"}`}
+        className={`h-8 w-8 rounded-full p-2 text-center text-xs font-medium ${tasksToDisplay && props.weekday === tasksToDisplay.weekday ? "bg-primary text-white" : "bg-[#F5F5F7] text-secondary"}`}
       >
         {new Date(props.date).toLocaleDateString("en", { day: "numeric" })}
       </span>
