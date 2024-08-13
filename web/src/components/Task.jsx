@@ -50,6 +50,31 @@ export default function Task(props) {
           ))}
         </div>
       </div>
+      {props.detailTask && (
+        <div>
+          <div className="my-8 border border-[#F5F5F7]" />
+          <div className="mb-5 mt-8 flex items-center justify-between">
+            <p className="font-semibold text-secondary">Detail Task</p>
+            <p className="text-xs font-medium text-secondary-400">
+              {props.category}
+            </p>
+          </div>
+          <ol className="flex flex-col gap-5">
+            {props.steps.map((step, index) => (
+              <li key={step.name} className="flex items-center gap-3">
+                <span
+                  className={`text-secondar inline-block h-9 w-9 rounded-[10px] p-2 text-center text-sm font-semibold ${step.isCompleted ? "bg-primary text-white" : "bg-gray-100"}`}
+                >
+                  {index + 1}
+                </span>
+                <span className="text-sm font-medium text-secondary">
+                  {step.name}
+                </span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
     </article>
   );
 }
