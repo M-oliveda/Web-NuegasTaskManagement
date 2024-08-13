@@ -22,3 +22,7 @@ export const months = [
   "November",
   "December",
 ];
+
+export function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * max) + min;
+}
