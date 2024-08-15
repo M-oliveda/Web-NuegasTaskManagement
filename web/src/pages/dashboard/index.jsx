@@ -19,32 +19,36 @@ export default function Dashboard() {
   }, [user]);
 
   return (
-    <>
-      <Header />
-      <div className="mx-6 my-8 block xl:hidden">
-        {isUserInfoLoading ? (
-          <>
-            <span className="mb-2 block h-[18] w-[30ch] animate-pulse rounded-[20px] bg-[#546FFF]"></span>
-            <span className="block h-[18] w-[30ch] animate-pulse rounded-[20px] bg-[#546FFF]"></span>
-          </>
-        ) : (
-          <>
-            <p className="text-2xl font-semibold text-secondary">
-              Hi, {user.firstname} {user.lastname}
-            </p>
-            <p className="text-sm font-medium text-secondary-400">
-              Let's finish your task today!
-            </p>
-          </>
-        )}
+    <div className="xl:grid xl:grid-cols-4">
+      <div className="col-end-4 xl:col-start-1 xl:p-8">
+        <Header />
+        <div className="mx-6 my-8 block xl:hidden">
+          {isUserInfoLoading ? (
+            <>
+              <span className="mb-2 block h-[18] w-[30ch] animate-pulse rounded-[20px] bg-[#546FFF]"></span>
+              <span className="block h-[18] w-[30ch] animate-pulse rounded-[20px] bg-[#546FFF]"></span>
+            </>
+          ) : (
+            <>
+              <p className="text-2xl font-semibold text-secondary">
+                Hi, {user.firstname} {user.lastname}
+              </p>
+              <p className="text-sm font-medium text-secondary-400">
+                Let's finish your task today!
+              </p>
+            </>
+          )}
+        </div>
+        <div className="xl:my-12 xl:flex xl:gap-8">
+          <TasksContextProvider>
+            <TaskSummary />
+          </TasksContextProvider>
+          <Activity />
+        </div>
+        <MentorsSection />
+        <UpcomingTasksSection />
       </div>
-      <TasksContextProvider>
-        <TaskSummary />
-      </TasksContextProvider>
-      <Activity />
-      <MentorsSection />
-      <UpcomingTasksSection />
       <TasksByDate />
-    </>
+    </div>
   );
 }

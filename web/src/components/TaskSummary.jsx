@@ -13,7 +13,7 @@ export default function TaskSummary() {
   }, [tasksSummary]);
 
   return (
-    <div className="mx-6 flex items-center justify-between rounded-[10px] bg-secondary p-5 xl:inline-block xl:flex-col xl:items-start xl:justify-start">
+    <div className="mx-6 flex items-center justify-between rounded-[10px] bg-secondary p-5 xl:flex xl:flex-col xl:items-start xl:justify-between">
       {isTaskLoading ? (
         <div>
           <span className="mb-2 block h-[18px] w-[25ch] animate-pulse rounded-[20px] bg-white" />

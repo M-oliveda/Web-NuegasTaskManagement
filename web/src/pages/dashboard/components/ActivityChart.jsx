@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import { getTasksByDate } from "../../../services/tasks";
+import { getTasksWithFilters } from "../../../services/tasks";
 
 export default function ActivityChart() {
   const [tasksByDate, setTasksByDate] = useState(null);
 
   useEffect(() => {
-    getTasksByDate().then((result) => {
-      setTasksByDate(
-        result.map((task) => ({ x: task.day, y: task.completedTasks })),
-      );
-    });
+    getTasksWithFilters(new Date().getFullYear(), "March").then((result) =>
+      setTasksByDate(() =>
+        Object.keys(result.months[0].tasksByWeek).map((week) => ({
+          x: week,
+          y: result.months[0].tasksByWeek[week].length,
+        })),
+      ),
+    );
   }, []);
 
   return (
@@ -77,21 +80,24 @@ export default function ActivityChart() {
                 enabled: false,
               },
             },
+            yaxis: {
+              stepSize: 1,
+              max: tasksByDate.reduce((maxNumber, item) => {
+                if (item.y > maxNumber) {
+                  return item.y;
+                } else {
+                  return maxNumber;
+                }
+              }, 0),
+            },
           }}
           series={[
             {
               name: "Tasks",
-              data: [
-                { x: "W", y: 8 },
-                { x: "T", y: 12 },
-                { x: "F", y: 7 },
-                { x: "S", y: 10 },
-                { x: "U", y: 6 },
-                { x: "M", y: 9 },
-              ],
+              data: tasksByDate,
             },
           ]}
-          height={200}
+          height={130}
         />
       )}
     </>

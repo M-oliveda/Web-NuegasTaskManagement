@@ -16,7 +16,7 @@ export default function Activity() {
     getTasksByDate().then((result) => setTasksAnalytics(result));
   });
   return (
-    <div className="mx-6 my-8 max-w-[600px] rounded-[10] bg-[#F5F5F7] p-5">
+    <div className="mx-6 my-8 max-w-[600px] rounded-[10] bg-[#F5F5F7] p-5 xl:m-0">
       <div>
         {isTaskLoading ? (
           <>
