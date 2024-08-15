@@ -1,0 +1,460 @@
+[
+  {
+    "title": "Interactive Data Visualization Dashboard",
+    "category": "Data Visualization",
+    "createdAt": "2024/03/05",
+    "timeLimit": "2024/03/30",
+    "studentsInvolved": 16,
+    "assets": "https://img.freepik.com/free-photo/data-visualization_23-2149123420.jpg",
+    "description": "Create an interactive dashboard to visualize data trends and metrics. Implement charts, graphs, and filters to provide insights into the data.",
+    "steps": [
+      {
+        "name": "Designing dashboard layout",
+        "isCompleted": false
+      },
+      {
+        "name": "Integrating data sources",
+        "isCompleted": false
+      },
+      {
+        "name": "Implementing interactivity features",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/21.jpg",
+      "https://randomuser.me/api/portraits/women/22.jpg"
+    ]
+  },
+  {
+    "title": "API Documentation and Testing",
+    "category": "Documentation",
+    "createdAt": "2024/03/10",
+    "timeLimit": "2024/03/31",
+    "studentsInvolved": 14,
+    "assets": "https://img.freepik.com/free-photo/api-documentation-concept_23-2149152484.jpg",
+    "description": "Document and test a newly developed API. Ensure the documentation is clear and comprehensive, and conduct thorough tests to validate API functionality.",
+    "steps": [
+      {
+        "name": "Creating API documentation",
+        "isCompleted": false
+      },
+      {
+        "name": "Performing API tests",
+        "isCompleted": false
+      },
+      {
+        "name": "Reviewing and updating documentation",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/23.jpg",
+      "https://randomuser.me/api/portraits/women/24.jpg"
+    ]
+  },
+  {
+    "title": "User Experience (UX) Research",
+    "category": "UX Design",
+    "createdAt": "2024/03/12",
+    "timeLimit": "2024/04/05",
+    "studentsInvolved": 12,
+    "assets": "https://img.freepik.com/free-photo/ux-research-concept_23-2149087583.jpg",
+    "description": "Conduct research to improve user experience for a web application. Use surveys, interviews, and usability testing to gather feedback and make design improvements.",
+    "steps": [
+      {
+        "name": "Designing research methodology",
+        "isCompleted": false
+      },
+      {
+        "name": "Conducting user surveys and interviews",
+        "isCompleted": false
+      },
+      {
+        "name": "Analyzing feedback and suggesting improvements",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/25.jpg",
+      "https://randomuser.me/api/portraits/women/26.jpg"
+    ]
+  },
+  {
+    "title": "Virtual Reality (VR) Application Development",
+    "category": "VR Development",
+    "createdAt": "2024/03/15",
+    "timeLimit": "2024/04/15",
+    "studentsInvolved": 20,
+    "assets": "https://img.freepik.com/free-photo/virtual-reality-headset_23-2149263474.jpg",
+    "description": "Develop a VR application for an immersive experience. Focus on creating interactive environments and ensuring smooth performance across different VR devices.",
+    "steps": [
+      {
+        "name": "Designing VR environment",
+        "isCompleted": false
+      },
+      {
+        "name": "Implementing interactive elements",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing on multiple VR devices",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/27.jpg",
+      "https://randomuser.me/api/portraits/women/28.jpg"
+    ]
+  },
+  {
+    "title": "Developing E-Commerce Website",
+    "category": "Web Development",
+    "createdAt": "2024/03/01",
+    "timeLimit": "2024/03/30",
+    "studentsInvolved": 18,
+    "assets": "https://img.freepik.com/free-photo/e-commerce-concept-mock-up-online-shopping-website-banner-blue-background_53876-124717.jpg",
+    "description": "Build a fully functional e-commerce website. Focus on implementing a smooth user interface, secure payment methods, and a scalable database structure.",
+    "steps": [
+      {
+        "name": "Setting up project architecture",
+        "isCompleted": true
+      },
+      {
+        "name": "Implementing payment gateway",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing and deploying the application",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/1.jpg",
+      "https://randomuser.me/api/portraits/women/2.jpg"
+    ]
+  },
+  {
+    "title": "Developing E-Commerce Website",
+    "category": "Web Development",
+    "createdAt": "2024/03/01",
+    "timeLimit": "2024/03/30",
+    "studentsInvolved": 18,
+    "assets": "https://img.freepik.com/free-photo/e-commerce-concept-mock-up-online-shopping-website-banner-blue-background_53876-124717.jpg",
+    "description": "Build a fully functional e-commerce website. Focus on implementing a smooth user interface, secure payment methods, and a scalable database structure.",
+    "steps": [
+      {
+        "name": "Setting up project architecture",
+        "isCompleted": true
+      },
+      {
+        "name": "Implementing payment gateway",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing and deploying the application",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/1.jpg",
+      "https://randomuser.me/api/portraits/women/2.jpg"
+    ]
+  },
+  {
+    "title": "Developing E-Commerce Website",
+    "category": "Web Development",
+    "createdAt": "2024/03/01",
+    "timeLimit": "2024/03/30",
+    "studentsInvolved": 18,
+    "assets": "https://img.freepik.com/free-photo/e-commerce-concept-mock-up-online-shopping-website-banner-blue-background_53876-124717.jpg",
+    "description": "Build a fully functional e-commerce website. Focus on implementing a smooth user interface, secure payment methods, and a scalable database structure.",
+    "steps": [
+      {
+        "name": "Setting up project architecture",
+        "isCompleted": true
+      },
+      {
+        "name": "Implementing payment gateway",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing and deploying the application",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/1.jpg",
+      "https://randomuser.me/api/portraits/women/2.jpg"
+    ]
+  },
+  {
+    "title": "Developing E-Commerce Website",
+    "category": "Web Development",
+    "createdAt": "2024/03/01",
+    "timeLimit": "2024/03/30",
+    "studentsInvolved": 18,
+    "assets": "https://img.freepik.com/free-photo/e-commerce-concept-mock-up-online-shopping-website-banner-blue-background_53876-124717.jpg",
+    "description": "Build a fully functional e-commerce website. Focus on implementing a smooth user interface, secure payment methods, and a scalable database structure.",
+    "steps": [
+      {
+        "name": "Setting up project architecture",
+        "isCompleted": true
+      },
+      {
+        "name": "Implementing payment gateway",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing and deploying the application",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/1.jpg",
+      "https://randomuser.me/api/portraits/women/2.jpg"
+    ]
+  },
+  {
+    "title": "Social Media Marketing Campaign",
+    "category": "Marketing",
+    "createdAt": "2024/04/10",
+    "timeLimit": "2024/04/30",
+    "studentsInvolved": 15,
+    "assets": "https://img.freepik.com/free-photo/social-media_23-2148162763.jpg",
+    "description": "Plan and execute a social media marketing campaign for a new product launch. Focus on engagement strategies, content creation, and analytics.",
+    "steps": [
+      {
+        "name": "Planning content calendar",
+        "isCompleted": true
+      },
+      {
+        "name": "Creating social media posts",
+        "isCompleted": false
+      },
+      {
+        "name": "Analyzing campaign performance",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/3.jpg",
+      "https://randomuser.me/api/portraits/women/4.jpg",
+      "https://randomuser.me/api/portraits/men/5.jpg"
+    ]
+  },
+  {
+    "title": "Database Optimization",
+    "category": "Database Management",
+    "createdAt": "2024/02/14",
+    "timeLimit": "2024/03/01",
+    "studentsInvolved": 10,
+    "assets": "https://img.freepik.com/free-photo/database-server-room-black-background-with-digital-table_41928-850.jpg",
+    "description": "Optimize an existing database to improve query performance and reduce load times. Consider indexing strategies, query optimization, and normalization.",
+    "steps": [
+      {
+        "name": "Analyzing current database structure",
+        "isCompleted": true
+      },
+      {
+        "name": "Implementing indexing strategies",
+        "isCompleted": true
+      },
+      {
+        "name": "Testing query performance",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/6.jpg",
+      "https://randomuser.me/api/portraits/women/7.jpg"
+    ]
+  },
+  {
+    "title": "Logo Design for Startup",
+    "category": "Graphic Design",
+    "createdAt": "2024/01/20",
+    "timeLimit": "2024/02/10",
+    "studentsInvolved": 8,
+    "assets": "https://img.freepik.com/free-photo/digital-composition-people-watching-logo-concept_23-2149600570.jpg",
+    "description": "Design a modern and innovative logo for a tech startup. Ensure the design reflects the company's values and target audience.",
+    "steps": [
+      {
+        "name": "Researching design trends",
+        "isCompleted": true
+      },
+      {
+        "name": "Creating initial sketches",
+        "isCompleted": false
+      },
+      {
+        "name": "Finalizing the logo design",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": ["https://randomuser.me/api/portraits/women/8.jpg"]
+  },
+  {
+    "title": "Mobile App Performance Testing",
+    "category": "Software Testing",
+    "createdAt": "2024/03/12",
+    "timeLimit": "2024/03/28",
+    "studentsInvolved": 12,
+    "assets": "https://img.freepik.com/free-photo/application-testing-concept-with-smartphone_23-2149399150.jpg",
+    "description": "Test the performance of a mobile app under various conditions. Focus on load testing, stress testing, and identifying performance bottlenecks.",
+    "steps": [
+      {
+        "name": "Setting up test environment",
+        "isCompleted": false
+      },
+      {
+        "name": "Conducting load tests",
+        "isCompleted": false
+      },
+      {
+        "name": "Analyzing test results",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/9.jpg",
+      "https://randomuser.me/api/portraits/women/10.jpg",
+      "https://randomuser.me/api/portraits/men/11.jpg"
+    ]
+  },
+  {
+    "title": "Content Management System Development",
+    "category": "Web Development",
+    "createdAt": "2024/02/25",
+    "timeLimit": "2024/03/25",
+    "studentsInvolved": 20,
+    "assets": "https://img.freepik.com/free-photo/content-management-system-concept-white-background_23-2150178200.jpg",
+    "description": "Develop a custom content management system (CMS) for a client. The system should allow easy content updates and support multiple user roles.",
+    "steps": [
+      {
+        "name": "Defining user roles and permissions",
+        "isCompleted": true
+      },
+      {
+        "name": "Building the CMS backend",
+        "isCompleted": false
+      },
+      {
+        "name": "Implementing front-end templates",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/women/12.jpg",
+      "https://randomuser.me/api/portraits/men/13.jpg"
+    ]
+  },
+  {
+    "title": "Machine Learning Model Training",
+    "category": "Data Science",
+    "createdAt": "2024/05/01",
+    "timeLimit": "2024/05/20",
+    "studentsInvolved": 25,
+    "assets": "https://img.freepik.com/free-photo/artificial-intelligence-technology-with-robot-humanoid-concept_23-2149150102.jpg",
+    "description": "Train a machine learning model on a given dataset. Focus on feature selection, model evaluation, and tuning hyperparameters for optimal performance.",
+    "steps": [
+      {
+        "name": "Cleaning and preparing the dataset",
+        "isCompleted": true
+      },
+      {
+        "name": "Training the model",
+        "isCompleted": false
+      },
+      {
+        "name": "Evaluating model performance",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/14.jpg",
+      "https://randomuser.me/api/portraits/women/15.jpg"
+    ]
+  },
+  {
+    "title": "Cloud Infrastructure Setup",
+    "category": "DevOps",
+    "createdAt": "2024/09/01",
+    "timeLimit": "2024/09/21",
+    "studentsInvolved": 20,
+    "assets": "https://images.unsplash.com/photo-1667984390527-850f63192709?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Set up cloud infrastructure for a scalable web application. This includes configuring virtual machines, setting up a load balancer, and implementing security measures.",
+    "steps": [
+      {
+        "name": "Setting up virtual machines",
+        "isCompleted": true
+      },
+      {
+        "name": "Configuring load balancer",
+        "isCompleted": false
+      },
+      {
+        "name": "Implementing security groups",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/16.jpg",
+      "https://randomuser.me/api/portraits/women/17.jpg"
+    ]
+  },
+  {
+    "title": "AI-Powered Chatbot Development",
+    "category": "Artificial Intelligence",
+    "createdAt": "2024/09/05",
+    "timeLimit": "2024/09/25",
+    "studentsInvolved": 22,
+    "assets": "https://img.freepik.com/free-photo/robot-chatbot-concept-with-smartphone_23-2149357585.jpg",
+    "description": "Develop an AI-powered chatbot capable of understanding natural language and providing intelligent responses. Focus on training the model and integrating it with a web interface.",
+    "steps": [
+      {
+        "name": "Designing chatbot conversation flow",
+        "isCompleted": false
+      },
+      {
+        "name": "Training the AI model",
+        "isCompleted": false
+      },
+      {
+        "name": "Integrating with web interface",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/women/18.jpg",
+      "https://randomuser.me/api/portraits/men/19.jpg"
+    ]
+  },
+  {
+    "title": "Cybersecurity Awareness Training",
+    "category": "Cybersecurity",
+    "createdAt": "2024/08/15",
+    "timeLimit": "2024/09/10",
+    "studentsInvolved": 30,
+    "assets": "https://img.freepik.com/free-photo/cyber-security-concept-with-padlock_23-2148886538.jpg",
+    "description": "Conduct a training program on cybersecurity awareness. Topics include phishing attacks, password security, and safe browsing practices.",
+    "steps": [
+      {
+        "name": "Developing training materials",
+        "isCompleted": true
+      },
+      {
+        "name": "Conducting training sessions",
+        "isCompleted": false
+      },
+      {
+        "name": "Evaluating participant understanding",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/20.jpg",
+      "https://randomuser.me/api/portraits/women/21.jpg"
+    ]
+  }
+]
