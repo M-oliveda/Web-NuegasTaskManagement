@@ -2,6 +2,8 @@ import { Clock } from "iconsax-react";
 import { timeLeft } from "../utils";
 import Progressbar from "./Progressbar";
 
+import { Link } from "react-router-dom";
+
 export default function Task(props) {
   const percentage = (
     (props.steps.reduce((accumulator, step) => {
@@ -73,6 +75,12 @@ export default function Task(props) {
               </li>
             ))}
           </ol>
+          <Link
+            to="/"
+            className="mt-14 block w-full rounded-[10px] bg-primary py-3 text-center text-sm font-semibold text-white hover:opacity-70"
+          >
+            Go To Detail
+          </Link>
         </div>
       )}
     </article>
