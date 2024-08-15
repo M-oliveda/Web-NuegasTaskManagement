@@ -1,5 +1,194 @@
 [
   {
+    "title": "Interactive Data Visualization Dashboard",
+    "category": "Data Visualization",
+    "createdAt": "2024/03/05",
+    "timeLimit": "2024/03/30",
+    "studentsInvolved": 16,
+    "assets": "https://img.freepik.com/free-photo/data-visualization_23-2149123420.jpg",
+    "description": "Create an interactive dashboard to visualize data trends and metrics. Implement charts, graphs, and filters to provide insights into the data.",
+    "steps": [
+      {
+        "name": "Designing dashboard layout",
+        "isCompleted": false
+      },
+      {
+        "name": "Integrating data sources",
+        "isCompleted": false
+      },
+      {
+        "name": "Implementing interactivity features",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/21.jpg",
+      "https://randomuser.me/api/portraits/women/22.jpg"
+    ]
+  },
+  {
+    "title": "API Documentation and Testing",
+    "category": "Documentation",
+    "createdAt": "2024/03/10",
+    "timeLimit": "2024/03/31",
+    "studentsInvolved": 14,
+    "assets": "https://img.freepik.com/free-photo/api-documentation-concept_23-2149152484.jpg",
+    "description": "Document and test a newly developed API. Ensure the documentation is clear and comprehensive, and conduct thorough tests to validate API functionality.",
+    "steps": [
+      {
+        "name": "Creating API documentation",
+        "isCompleted": false
+      },
+      {
+        "name": "Performing API tests",
+        "isCompleted": false
+      },
+      {
+        "name": "Reviewing and updating documentation",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/23.jpg",
+      "https://randomuser.me/api/portraits/women/24.jpg"
+    ]
+  },
+  {
+    "title": "User Experience (UX) Research",
+    "category": "UX Design",
+    "createdAt": "2024/03/12",
+    "timeLimit": "2024/04/05",
+    "studentsInvolved": 12,
+    "assets": "https://img.freepik.com/free-photo/ux-research-concept_23-2149087583.jpg",
+    "description": "Conduct research to improve user experience for a web application. Use surveys, interviews, and usability testing to gather feedback and make design improvements.",
+    "steps": [
+      {
+        "name": "Designing research methodology",
+        "isCompleted": false
+      },
+      {
+        "name": "Conducting user surveys and interviews",
+        "isCompleted": false
+      },
+      {
+        "name": "Analyzing feedback and suggesting improvements",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/25.jpg",
+      "https://randomuser.me/api/portraits/women/26.jpg"
+    ]
+  },
+  {
+    "title": "Virtual Reality (VR) Application Development",
+    "category": "VR Development",
+    "createdAt": "2024/03/15",
+    "timeLimit": "2024/04/15",
+    "studentsInvolved": 20,
+    "assets": "https://img.freepik.com/free-photo/virtual-reality-headset_23-2149263474.jpg",
+    "description": "Develop a VR application for an immersive experience. Focus on creating interactive environments and ensuring smooth performance across different VR devices.",
+    "steps": [
+      {
+        "name": "Designing VR environment",
+        "isCompleted": false
+      },
+      {
+        "name": "Implementing interactive elements",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing on multiple VR devices",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/27.jpg",
+      "https://randomuser.me/api/portraits/women/28.jpg"
+    ]
+  },
+  {
+    "title": "Developing E-Commerce Website",
+    "category": "Web Development",
+    "createdAt": "2024/03/01",
+    "timeLimit": "2024/03/30",
+    "studentsInvolved": 18,
+    "assets": "https://img.freepik.com/free-photo/e-commerce-concept-mock-up-online-shopping-website-banner-blue-background_53876-124717.jpg",
+    "description": "Build a fully functional e-commerce website. Focus on implementing a smooth user interface, secure payment methods, and a scalable database structure.",
+    "steps": [
+      {
+        "name": "Setting up project architecture",
+        "isCompleted": true
+      },
+      {
+        "name": "Implementing payment gateway",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing and deploying the application",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/1.jpg",
+      "https://randomuser.me/api/portraits/women/2.jpg"
+    ]
+  },
+  {
+    "title": "Developing E-Commerce Website",
+    "category": "Web Development",
+    "createdAt": "2024/03/01",
+    "timeLimit": "2024/03/30",
+    "studentsInvolved": 18,
+    "assets": "https://img.freepik.com/free-photo/e-commerce-concept-mock-up-online-shopping-website-banner-blue-background_53876-124717.jpg",
+    "description": "Build a fully functional e-commerce website. Focus on implementing a smooth user interface, secure payment methods, and a scalable database structure.",
+    "steps": [
+      {
+        "name": "Setting up project architecture",
+        "isCompleted": true
+      },
+      {
+        "name": "Implementing payment gateway",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing and deploying the application",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/1.jpg",
+      "https://randomuser.me/api/portraits/women/2.jpg"
+    ]
+  },
+  {
+    "title": "Developing E-Commerce Website",
+    "category": "Web Development",
+    "createdAt": "2024/03/01",
+    "timeLimit": "2024/03/30",
+    "studentsInvolved": 18,
+    "assets": "https://img.freepik.com/free-photo/e-commerce-concept-mock-up-online-shopping-website-banner-blue-background_53876-124717.jpg",
+    "description": "Build a fully functional e-commerce website. Focus on implementing a smooth user interface, secure payment methods, and a scalable database structure.",
+    "steps": [
+      {
+        "name": "Setting up project architecture",
+        "isCompleted": true
+      },
+      {
+        "name": "Implementing payment gateway",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing and deploying the application",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/1.jpg",
+      "https://randomuser.me/api/portraits/women/2.jpg"
+    ]
+  },
+  {
     "title": "Developing E-Commerce Website",
     "category": "Web Development",
     "createdAt": "2024/03/01",
