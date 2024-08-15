@@ -19,7 +19,7 @@ export default function TasksByDate() {
   return (
     <TasksByDateContext.Provider value={{ tasksToDisplay, setTasksToDisplay }}>
       <div
-        className={`bg-[#F5F5F7] p-6 ${tasksToDisplay && randomTask && `space-y-8`} *:basis-auto xl:flex xl:flex-col xl:items-center`}
+        className={`bg-[#F5F5F7] p-6 ${tasksToDisplay && randomTask && `space-y-8`} *:w-full *:basis-auto xl:flex xl:flex-col xl:items-center xl:p-6`}
       >
         <TaskCalendar />
         {tasksToDisplay && randomTask && (
