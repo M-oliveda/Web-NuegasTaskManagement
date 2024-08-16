@@ -6,11 +6,16 @@ import {
 import Dashboard from "./pages/dashboard";
 import { StrictMode } from "react";
 import UserContextProvider from "./components/UserContextProvider";
+import TasksPage from "./pages/taskspage";
 
 const webRouter = createBrowserRouter([
   {
     path: "/",
     element: <Dashboard />,
+  },
+  {
+    path: "/tasks",
+    element: <TasksPage />,
   },
   {
     path: "*",
