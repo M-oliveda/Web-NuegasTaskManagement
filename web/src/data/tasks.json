@@ -5,7 +5,8 @@
     "createdAt": "2024/03/15",
     "timeLimit": "2024/06/10",
     "studentsInvolved": 20,
-    "assets": "https://img.freepik.com/free-photo/website-design-concept_23-2148876128.jpg",
+    "assets": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "video": "https://videos.pexels.com/video-files/5390861/5390861-sd_960_506_30fps.mp4",
     "description": "Conduct a workshop on responsive web design, focusing on making websites adaptable to different screen sizes and devices.",
     "steps": [
       {
@@ -18,13 +19,14 @@
       },
       {
         "name": "Conducting the workshop",
-        "isCompleted": false
+        "isCompleted": true
       }
     ],
     "peopleAssigned": [
       "https://randomuser.me/api/portraits/men/31.jpg",
       "https://randomuser.me/api/portraits/women/32.jpg"
-    ]
+    ],
+    "duration": 180
   },
   {
     "title": "Machine Learning Model Deployment",
@@ -32,16 +34,17 @@
     "createdAt": "2024/04/12",
     "timeLimit": "2024/05/05",
     "studentsInvolved": 12,
-    "assets": "https://img.freepik.com/free-photo/ai-technology-brain-background-digital-transformation-concept_53876-124700.jpg",
+    "assets": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/7649279/7649279-sd_640_360_30fps.mp4",
     "description": "Deploy a machine learning model to a cloud environment and make it accessible via an API for inference.",
     "steps": [
       {
         "name": "Finalizing model training",
-        "isCompleted": false
+        "isCompleted": true
       },
       {
         "name": "Setting up cloud infrastructure",
-        "isCompleted": true
+        "isCompleted": false
       },
       {
         "name": "Deploying the model",
@@ -51,7 +54,8 @@
     "peopleAssigned": [
       "https://randomuser.me/api/portraits/men/41.jpg",
       "https://randomuser.me/api/portraits/women/42.jpg"
-    ]
+    ],
+    "duration": 240
   },
   {
     "title": "Mobile App Performance Optimization",
@@ -59,12 +63,13 @@
     "createdAt": "2024/09/10",
     "timeLimit": "2024/09/30",
     "studentsInvolved": 18,
-    "assets": "https://img.freepik.com/free-photo/close-up-man-using-his-smart-phone_23-2149190927.jpg",
+    "assets": "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5971077/5971077-sd_960_506_25fps.mp4",
     "description": "Optimize the performance of a mobile application to reduce loading times and improve user experience.",
     "steps": [
       {
         "name": "Analyzing current performance",
-        "isCompleted": false
+        "isCompleted": true
       },
       {
         "name": "Implementing optimizations",
@@ -78,7 +83,8 @@
     "peopleAssigned": [
       "https://randomuser.me/api/portraits/men/51.jpg",
       "https://randomuser.me/api/portraits/women/52.jpg"
-    ]
+    ],
+    "duration": 360
   },
   {
     "title": "E-Commerce Website Backend Integration",
@@ -86,16 +92,17 @@
     "createdAt": "2024/03/01",
     "timeLimit": "2024/07/25",
     "studentsInvolved": 14,
-    "assets": "https://img.freepik.com/free-photo/online-shopping-concept_23-2148631722.jpg",
+    "assets": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/6994619/6994619-sd_640_360_30fps.mp4",
     "description": "Integrate a secure backend with an e-commerce website to handle user authentication, payments, and product management.",
     "steps": [
       {
         "name": "Setting up the backend",
-        "isCompleted": false
+        "isCompleted": true
       },
       {
         "name": "Integrating payment gateway",
-        "isCompleted": false
+        "isCompleted": true
       },
       {
         "name": "Testing user authentication",
@@ -105,15 +112,17 @@
     "peopleAssigned": [
       "https://randomuser.me/api/portraits/men/61.jpg",
       "https://randomuser.me/api/portraits/women/62.jpg"
-    ]
+    ],
+    "duration": 420
   },
   {
     "title": "Cloud Infrastructure Automation",
     "category": "DevOps",
     "createdAt": "2024/09/10",
     "timeLimit": "2024/08/30",
+    "assets": "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/3129671/3129671-sd_640_360_30fps.mp4",
     "studentsInvolved": 22,
-    "assets": "https://img.freepik.com/free-photo/server-room-background_23-2149136223.jpg",
     "description": "Automate cloud infrastructure deployment and management using infrastructure-as-code tools like Terraform.",
     "steps": [
       {
@@ -132,7 +141,8 @@
     "peopleAssigned": [
       "https://randomuser.me/api/portraits/men/71.jpg",
       "https://randomuser.me/api/portraits/women/72.jpg"
-    ]
+    ],
+    "duration": 480
   },
   {
     "title": "Cybersecurity Incident Response Plan",
@@ -140,7 +150,8 @@
     "createdAt": "2024/09/05",
     "timeLimit": "2024/09/25",
     "studentsInvolved": 15,
-    "assets": "https://img.freepik.com/free-photo/hacker-with-laptop-backview_23-2148485310.jpg",
+    "assets": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/6330779/6330779-sd_640_360_30fps.mp4",
     "description": "Develop a comprehensive incident response plan to address potential cybersecurity threats and breaches.",
     "steps": [
       {
@@ -159,34 +170,8 @@
     "peopleAssigned": [
       "https://randomuser.me/api/portraits/men/81.jpg",
       "https://randomuser.me/api/portraits/women/82.jpg"
-    ]
-  },
-  {
-    "title": "Automated Testing Framework Setup",
-    "category": "Quality Assurance",
-    "createdAt": "2024/03/10",
-    "timeLimit": "2024/03/05",
-    "studentsInvolved": 13,
-    "assets": "https://img.freepik.com/free-photo/quality-assurance-certification_23-2148386410.jpg",
-    "description": "Set up an automated testing framework to ensure continuous integration and deployment of quality software.",
-    "steps": [
-      {
-        "name": "Choosing testing tools",
-        "isCompleted": false
-      },
-      {
-        "name": "Setting up CI/CD pipeline",
-        "isCompleted": false
-      },
-      {
-        "name": "Writing test cases",
-        "isCompleted": false
-      }
     ],
-    "peopleAssigned": [
-      "https://randomuser.me/api/portraits/men/91.jpg",
-      "https://randomuser.me/api/portraits/women/92.jpg"
-    ]
+    "duration": 300
   },
   {
     "title": "Data Privacy Compliance Audit",
@@ -194,79 +179,27 @@
     "createdAt": "2024/04/20",
     "timeLimit": "2024/05/15",
     "studentsInvolved": 17,
-    "assets": "https://img.freepik.com/free-photo/gdpr-compliance-concept_23-2148930745.jpg",
-    "description": "Conduct an audit to ensure compliance with data privacy regulations, including GDPR and CCPA.",
+    "assets": "https://images.pexels.com/photos/211151/pexels-photo-211151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/3130284/3130284-uhd_2560_1440_30fps.mp4",
+    "description": "Conduct an audit to ensure compliance with data privacy regulations like GDPR and CCPA.",
     "steps": [
       {
-        "name": "Reviewing current policies",
+        "name": "Reviewing existing policies",
         "isCompleted": false
       },
       {
-        "name": "Conducting compliance checks",
+        "name": "Identifying compliance gaps",
         "isCompleted": false
       },
       {
-        "name": "Updating documentation",
+        "name": "Recommending policy changes",
         "isCompleted": false
       }
     ],
     "peopleAssigned": [
-      "https://randomuser.me/api/portraits/men/81.jpg",
-      "https://randomuser.me/api/portraits/women/82.jpg"
-    ]
-  },
-  {
-    "title": "IoT Smart Home Project",
-    "category": "IoT",
-    "createdAt": "2024/03/05",
-    "timeLimit": "2024/03/30",
-    "studentsInvolved": 19,
-    "assets": "https://img.freepik.com/free-photo/smart-home-automation-concept_23-2149182780.jpg",
-    "description": "Develop a smart home system using IoT devices to automate lighting, temperature control, and security.",
-    "steps": [
-      {
-        "name": "Selecting IoT devices",
-        "isCompleted": false
-      },
-      {
-        "name": "Setting up home network",
-        "isCompleted": false
-      },
-      {
-        "name": "Programming automation rules",
-        "isCompleted": false
-      }
+      "https://randomuser.me/api/portraits/men/101.jpg",
+      "https://randomuser.me/api/portraits/women/102.jpg"
     ],
-    "peopleAssigned": [
-      "https://randomuser.me/api/portraits/men/81.jpg",
-      "https://randomuser.me/api/portraits/women/82.jpg"
-    ]
-  },
-  {
-    "title": "Blockchain Supply Chain Solution",
-    "category": "Blockchain",
-    "createdAt": "2024/09/20",
-    "timeLimit": "2024/10/15",
-    "studentsInvolved": 25,
-    "assets": "https://img.freepik.com/free-photo/blockchain-concept-with-people-connecting-puzzle-elements_23-2148878447.jpg",
-    "description": "Implement a blockchain-based solution to enhance transparency and security in supply chain management.",
-    "steps": [
-      {
-        "name": "Designing blockchain architecture",
-        "isCompleted": false
-      },
-      {
-        "name": "Developing smart contracts",
-        "isCompleted": false
-      },
-      {
-        "name": "Deploying solution",
-        "isCompleted": false
-      }
-    ],
-    "peopleAssigned": [
-      "https://randomuser.me/api/portraits/men/81.jpg",
-      "https://randomuser.me/api/portraits/women/82.jpg"
-    ]
+    "duration": 360
   }
 ]
