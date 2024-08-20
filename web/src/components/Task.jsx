@@ -26,7 +26,9 @@ export default function Task(props) {
       />
       <div className="my-4 flex flex-col space-y-1">
         <h3 className="font-semibold text-secondary hover:text-secondary-200">
-          <Link to={props.toURL}>{props.title}</Link>
+          <Link to={`/tasks/detailtask/${encodeURIComponent(props.title)}`}>
+            {props.title}
+          </Link>
         </h3>
         <p className="text-xs font-medium text-secondary-400">
           {props.category}
@@ -79,7 +81,7 @@ export default function Task(props) {
             ))}
           </ol>
           <Link
-            to="/"
+            to={`/tasks/detailtask/${encodeURIComponent(props.title)}`}
             className="mt-14 block w-full rounded-[10px] bg-primary py-3 text-center text-sm font-semibold text-white hover:opacity-70"
           >
             Go To Detail
