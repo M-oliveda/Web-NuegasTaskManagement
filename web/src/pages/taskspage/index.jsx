@@ -8,12 +8,13 @@ import {
   getTasksWithFilters,
 } from "../../services/tasks";
 import { debounce } from "../../utils";
+import { Link, Outlet, useParams } from "react-router-dom";
 
 export default function TasksPage() {
   const [tasks, setTasks] = useState(null);
   const [futureTasks, setFutureTasks] = useState(null);
   const [searchTaskValue, setSearchTaskValue] = useState(null);
-  const [filteredTasks, setFilteredTasks] = useState(null);
+  const { title } = useParams();
 
   useEffect(() => {
     if (!searchTaskValue) {
@@ -44,13 +45,51 @@ export default function TasksPage() {
     }
   }, [searchTaskValue]);
 
-  return (
-    <>
-      <Header searchTaskValueMethod={setSearchTaskValue} />
-      <div className="bg-gray-100 p-6 xl:p-8">
-        {!searchTaskValue ? (
-          <>
-            <Carousel title="Time Limit">
+  if (!title) {
+    return (
+      <>
+        <Header
+          searchTaskValueMethod={setSearchTaskValue}
+          title="Explore Tasks"
+        />
+        <div className="bg-gray-100 p-6 xl:p-8">
+          {!searchTaskValue ? (
+            <>
+              <Carousel title="Time Limit">
+                {tasks &&
+                  tasks.map((task) => (
+                    <Task
+                      key={task.title}
+                      title={task.title}
+                      category={task.category}
+                      createdAt={task.createdAt}
+                      timeLimit={task.timeLimit}
+                      steps={task.steps}
+                      peopleAssigned={task.peopleAssigned}
+                      assets={task.assets}
+                      toURL={`detailtask/${encodeURIComponent(task.title)}`}
+                    />
+                  ))}
+              </Carousel>
+              <Carousel title="New Tasks">
+                {futureTasks &&
+                  futureTasks.map((task) => (
+                    <Task
+                      key={task.title}
+                      title={task.title}
+                      category={task.category}
+                      createdAt={task.createdAt}
+                      timeLimit={task.timeLimit}
+                      steps={task.steps}
+                      peopleAssigned={task.peopleAssigned}
+                      assets={task.assets}
+                      toURL={`detailtask/${encodeURIComponent(task.title)}`}
+                    />
+                  ))}
+              </Carousel>
+            </>
+          ) : (
+            <div className="flex flex-wrap gap-6">
               {tasks &&
                 tasks.map((task) => (
                   <Task
@@ -64,41 +103,23 @@ export default function TasksPage() {
                     assets={task.assets}
                   />
                 ))}
-            </Carousel>
-            <Carousel title="New Tasks">
-              {futureTasks &&
-                futureTasks.map((task) => (
-                  <Task
-                    key={task.title}
-                    title={task.title}
-                    category={task.category}
-                    createdAt={task.createdAt}
-                    timeLimit={task.timeLimit}
-                    steps={task.steps}
-                    peopleAssigned={task.peopleAssigned}
-                    assets={task.assets}
-                  />
-                ))}
-            </Carousel>
-          </>
-        ) : (
-          <div className="flex flex-wrap gap-6">
-            {tasks &&
-              tasks.map((task) => (
-                <Task
-                  key={task.title}
-                  title={task.title}
-                  category={task.category}
-                  createdAt={task.createdAt}
-                  timeLimit={task.timeLimit}
-                  steps={task.steps}
-                  peopleAssigned={task.peopleAssigned}
-                  assets={task.assets}
-                />
-              ))}
-          </div>
-        )}
-      </div>
-    </>
-  );
+            </div>
+          )}
+          <Outlet />
+        </div>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Header
+          searchTaskValueMethod={setSearchTaskValue}
+          title="Detail Task"
+        />
+        <div className="bg-gray-100 p-6 xl:p-8">
+          <Outlet />
+        </div>
+      </>
+    );
+  }
 }

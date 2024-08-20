@@ -28,7 +28,7 @@ export default function Header(props) {
     <header className="xl:grid xl:grid-cols-2 xl:p-8">
       <ProfileHeader />
       <h1 className="my-8 ml-6 text-2xl font-semibold text-secondary xl:col-start-1 xl:row-start-1 xl:m-0">
-        Explore Tasks
+        {props.title}
       </h1>
       <div className="xl:col-span-2 xl:col-start-1 xl:row-start-2">
         <label htmlFor="searchTask" className="sr-only">
@@ -39,7 +39,7 @@ export default function Header(props) {
             <input
               type="search"
               id="searchTask"
-              className="search-cancel:appearance-none block w-full rounded-[10px] border border-[#F5F5F7] bg-transparent px-7 py-[14px] focus-visible:border-2 focus-visible:border-primary focus-visible:outline-none"
+              className="block w-full rounded-[10px] border border-[#F5F5F7] bg-transparent px-7 py-[14px] focus-visible:border-2 focus-visible:border-primary focus-visible:outline-none search-cancel:appearance-none"
               placeholder="Search Task"
               value={searchValue}
               onChange={changeSearchValueHandler}

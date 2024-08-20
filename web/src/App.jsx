@@ -7,6 +7,7 @@ import Dashboard from "./pages/dashboard";
 import { StrictMode } from "react";
 import UserContextProvider from "./components/UserContextProvider";
 import TasksPage from "./pages/taskspage";
+import DetailTaskPage from "./pages/taskspage/pages/detailstask";
 
 const webRouter = createBrowserRouter([
   {
@@ -16,6 +17,12 @@ const webRouter = createBrowserRouter([
   {
     path: "/tasks",
     element: <TasksPage />,
+    children: [
+      {
+        path: "detailtask/:title",
+        element: <DetailTaskPage />,
+      },
+    ],
   },
   {
     path: "*",
