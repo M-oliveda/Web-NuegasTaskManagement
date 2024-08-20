@@ -130,3 +130,24 @@ export async function getTasksWithFilters(
     return false;
   }
 }
+
+export async function getTasksByName(taskName) {
+  const result = await getTasks();
+
+  const tasksFlat = result[0].months.reduce(
+    (accumulator, month) =>
+      accumulator.concat(
+        Object.keys(month.tasksByWeek)
+          .map((key) => month.tasksByWeek[key])
+          .reduce(
+            (accumulator, currentValue) => accumulator.concat(currentValue),
+            [],
+          ),
+      ),
+    [],
+  );
+
+  return tasksFlat.filter(
+    (task) => task.title.toLowerCase().indexOf(taskName.toLowerCase()) != -1,
+  );
+}

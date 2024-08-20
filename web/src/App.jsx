@@ -1,7 +1,13 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  redirect,
+  RouterProvider,
+} from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 import { StrictMode } from "react";
 import UserContextProvider from "./components/UserContextProvider";
+import TasksPage from "./pages/taskspage";
+import DetailTaskPage from "./pages/taskspage/pages/detailstask";
 
 const webRouter = createBrowserRouter([
   {
@@ -9,8 +15,19 @@ const webRouter = createBrowserRouter([
     element: <Dashboard />,
   },
   {
+    path: "/tasks",
+    element: <TasksPage />,
+    children: [
+      {
+        path: "detailtask/:title",
+        element: <DetailTaskPage />,
+      },
+    ],
+  },
+  {
     path: "*",
     element: <Dashboard />,
+    loader: async () => redirect("/"),
   },
 ]);
 

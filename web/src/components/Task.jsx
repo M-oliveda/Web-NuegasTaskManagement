@@ -1,6 +1,7 @@
 import { Clock } from "iconsax-react";
 import { timeLeft } from "../utils";
 import Progressbar from "./Progressbar";
+import { Link } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
@@ -24,7 +25,9 @@ export default function Task(props) {
         className="h-[110px] w-full rounded-[10px] object-cover"
       />
       <div className="my-4 flex flex-col space-y-1">
-        <h3 className="font-semibold text-secondary">{props.title}</h3>
+        <h3 className="font-semibold text-secondary hover:text-secondary-200">
+          <Link to={props.toURL}>{props.title}</Link>
+        </h3>
         <p className="text-xs font-medium text-secondary-400">
           {props.category}
         </p>
