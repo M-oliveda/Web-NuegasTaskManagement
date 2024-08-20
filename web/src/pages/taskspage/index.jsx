@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Carousel from "../../components/Carousel";
-import Header from "./layouts/Header";
+import TopBar from "../../layouts/TopBar";
 import Task from "../../components/Task";
 import {
   getFutureTasks,
@@ -8,7 +8,7 @@ import {
   getTasksWithFilters,
 } from "../../services/tasks";
 import { debounce } from "../../utils";
-import { Link, Outlet, useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 
 export default function TasksPage() {
   const [tasks, setTasks] = useState(null);
@@ -48,7 +48,7 @@ export default function TasksPage() {
   if (!title) {
     return (
       <>
-        <Header
+        <TopBar
           searchTaskValueMethod={setSearchTaskValue}
           title="Explore Tasks"
         />
@@ -112,7 +112,7 @@ export default function TasksPage() {
   } else {
     return (
       <>
-        <Header
+        <TopBar
           searchTaskValueMethod={setSearchTaskValue}
           title="Detail Task"
         />
