@@ -7,7 +7,7 @@ export default function TasksContextProvider({ children }) {
 
   useEffect(() => {
     getTotalTasks().then((result) => setTasksSummary(result));
-  });
+  }, []);
 
   return (
     <TasksContext.Provider value={{ tasksSummary }}>
