@@ -77,6 +77,15 @@ module.exports = {
           900: "#040815",
         },
       },
+      keyframes: {
+        fadeout: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
+      },
+      animation: {
+        fadeout: "fadeout 2000ms ease-in-out forwards",
+      },
     },
   },
   plugins: [
