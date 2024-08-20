@@ -8,7 +8,7 @@ export default function MentorsSection() {
 
   useEffect(() => {
     getMentorsId().then((result) => setMentorsId(result));
-  });
+  }, []);
 
   return (
     mentorsId && (
