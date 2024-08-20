@@ -5,10 +5,10 @@ import {
   Setting4,
   Sort,
 } from "iconsax-react";
-import { default as ProfileHeader } from "../../../layouts/Header";
+import UserSection from "./UserSection";
 import { useState } from "react";
 
-export default function Header(props) {
+export default function TopBar(props) {
   const [displayAdditionalFilters, setDisplayAdditionalFilters] =
     useState(false);
 
@@ -26,10 +26,14 @@ export default function Header(props) {
 
   return (
     <header className="xl:grid xl:grid-cols-2 xl:p-8">
-      <ProfileHeader />
-      <h1 className="my-8 ml-6 text-2xl font-semibold text-secondary xl:col-start-1 xl:row-start-1 xl:m-0">
-        {props.title}
-      </h1>
+      <UserSection />
+      {props.children ? (
+        props.children
+      ) : (
+        <h1 className="my-8 ml-6 text-2xl font-semibold text-secondary xl:col-start-1 xl:row-start-1 xl:m-0">
+          {props.title}
+        </h1>
+      )}
       <div className="xl:col-span-2 xl:col-start-1 xl:row-start-2">
         <label htmlFor="searchTask" className="sr-only">
           Search

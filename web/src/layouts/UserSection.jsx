@@ -2,7 +2,7 @@ import { HambergerMenu, Notification, Profile } from "iconsax-react";
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../context/UserContext";
 
-export default function Header() {
+export default function UserSection() {
   const { user } = useContext(UserContext);
   const [isUserInfoLoading, setIsUserInfoLoading] = useState(
     user ? false : true,
@@ -17,7 +17,7 @@ export default function Header() {
   }, [user]);
 
   return (
-    <header className="flex items-center justify-between px-6 py-8 xl:px-0 xl:py-0">
+    <header className="flex items-center justify-between px-6 py-8 xl:justify-self-end xl:px-0 xl:py-0">
       <button type="button" className="xl:hidden">
         <span
           className={`block h-11 w-11 rounded-full border p-[10px] ${isUserInfoLoading ? "animate-pulse border-primary-300 text-primary-300" : "border-[#F5F5F7] text-secondary-300"}`}
@@ -25,23 +25,6 @@ export default function Header() {
           <HambergerMenu size={24} />
         </span>
       </button>
-      <div className="hidden xl:block">
-        {isUserInfoLoading ? (
-          <>
-            <span className="mb-2 block h-[18] w-[30ch] animate-pulse rounded-[20px] bg-[#546FFF]"></span>
-            <span className="block h-[18] w-[30ch] animate-pulse rounded-[20px] bg-[#546FFF]"></span>
-          </>
-        ) : (
-          <>
-            <p className="text-2xl font-semibold text-secondary">
-              Hi, {user.firstname} {user.lastname}
-            </p>
-            <p className="font-medium text-secondary-400">
-              Let's finish your task today!
-            </p>
-          </>
-        )}
-      </div>
       <div className="flex gap-4">
         <button type="button">
           <span
