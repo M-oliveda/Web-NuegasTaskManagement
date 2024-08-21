@@ -11,15 +11,9 @@ import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 
 import { default as Logo } from "../assets/img/logo.svg";
-import { useClickAway } from "@uidotdev/usehooks";
 
 export default function Menu() {
   const { appMenuRef } = useContext(GlobalContext);
-  const containerRef = useClickAway(() => {
-    appMenuRef.current.style.width = 0;
-    appMenuRef.current.style.padding = 0;
-    appMenuRef.current.style.backgroundColor = "transparent";
-  });
 
   const navItems = [
     {
@@ -44,13 +38,28 @@ export default function Menu() {
     },
   ];
 
+  function minimizeMenuHandler() {
+    appMenuRef.current.style.width = 0;
+    appMenuRef.current.style.padding = 0;
+    appMenuRef.current.style.backgroundColor = "transparent";
+  }
+
   return (
-    <div ref={containerRef}>
+    <div>
       <div
-        className="fixed left-0 top-0 z-10 flex h-full w-0 max-w-[252px] flex-col overflow-hidden border-r border-gray-100 bg-transparent p-0 duration-500 xl:col-start-1 xl:col-end-2 xl:max-w-full xl:items-start"
+        className="fixed left-0 top-0 z-10 flex h-full w-0 max-w-[252px] flex-col overflow-hidden border-r border-gray-100 bg-transparent p-0 duration-500 xl:col-start-1 xl:col-end-2 xl:w-auto xl:max-w-full xl:items-start xl:bg-white xl:p-6"
         ref={appMenuRef}
       >
-        <img src={Logo} alt="Application logo." width={188} />
+        <div>
+          <img src={Logo} alt="Application logo." width={188} />
+          <button
+            type="button"
+            className="xl:hidden"
+            onClick={minimizeMenuHandler}
+          >
+            <CloseCircle color="#8E92BC" />
+          </button>
+        </div>
         <nav>
           <ul className="mt-16 space-y-6">
             {navItems.map((item) => (
