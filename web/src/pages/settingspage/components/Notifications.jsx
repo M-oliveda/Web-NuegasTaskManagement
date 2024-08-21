@@ -20,7 +20,10 @@ export default function Notifications() {
     },
   ];
   return (
-    <div className="m-6 rounded-[10px] bg-white p-5 xl:m-0 xl:rounded-none">
+    <div
+      className="m-6 rounded-[10px] bg-white p-5 xl:m-0 xl:rounded-none"
+      id="notificationsSettingsSection"
+    >
       <ul className="space-y-6">
         {notificationsItems.map((item) => (
           <li key={item.name} className="space-x-5">
@@ -30,7 +33,7 @@ export default function Notifications() {
       </ul>
       <button
         type="button"
-        className="mt-10 block w-full rounded-[10px] bg-primary py-3 text-center text-sm font-semibold text-white hover:opacity-70 xl:mt-0"
+        className="mt-10 block w-full max-w-[250px] rounded-[10px] bg-primary py-3 text-center text-sm font-semibold text-white hover:opacity-70"
       >
         Save Changes
       </button>

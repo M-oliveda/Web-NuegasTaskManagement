@@ -2,7 +2,10 @@ import ButtonCheckbox from "../../../components/ButtonCheckbox";
 
 export default function Settings() {
   return (
-    <div className="m-6 space-y-6 rounded-[10px] bg-white p-5 xl:m-0 xl:rounded-none">
+    <div
+      className="m-6 space-y-6 rounded-[10px] bg-white p-5 xl:m-0 xl:rounded-none"
+      id="generalSettingsSection"
+    >
       <div>
         <p className="mb-4 text-sm font-semibold text-secondary">Language</p>
         <select
@@ -26,7 +29,7 @@ export default function Settings() {
       <div>
         <p className="mb-4 text-sm font-semibold text-secondary">Timezone</p>
         <div className="flex items-center gap-4">
-          <ButtonCheckbox name="timezone" value="24-hours">
+          <ButtonCheckbox name="timezone" value="24-hours" checked={true}>
             24 Hours
           </ButtonCheckbox>
           <ButtonCheckbox name="timezone" value="12-hours">

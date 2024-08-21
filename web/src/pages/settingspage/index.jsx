@@ -33,7 +33,7 @@ export default function SettingsPage() {
                       onClick={() => setSelectedTabIndex(element.id)}
                     >
                       <a
-                        href="#"
+                        href={`#${element.name[0].toLocaleLowerCase() + element.name.substring(1)}SettingsSection`}
                         className={`inline-block rounded-t-lg border-b-2 border-transparent p-4 text-sm font-medium text-secondary-300 ${selectedTabIndex === element.id && "border-b border-b-primary"}`}
                       >
                         {element.name}
