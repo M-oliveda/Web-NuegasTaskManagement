@@ -12,6 +12,7 @@ export default function ButtonCheckbox(props) {
         type="radio"
         value={props.value}
         name={props.name}
+        checked={props.checked}
         onChange={() => console.log("SELECTED!")}
         className="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
