@@ -1,12 +1,14 @@
 import { HambergerMenu, Notification, Profile } from "iconsax-react";
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../context/UserContext";
+import { GlobalContext } from "../context/GlobalContext";
 
 export default function UserSection() {
   const { user } = useContext(UserContext);
   const [isUserInfoLoading, setIsUserInfoLoading] = useState(
     user ? false : true,
   );
+  const { appMenuRef } = useContext(GlobalContext);
 
   const [screenSize, setSreenSize] = useState(
     window.matchMedia("(min-width: 1280px)"),
@@ -16,9 +18,15 @@ export default function UserSection() {
     setIsUserInfoLoading(user ? false : true);
   }, [user]);
 
+  function openAppMenuHandler(e) {
+    appMenuRef.current.style.width = "100%";
+    appMenuRef.current.style.padding = "32px";
+    appMenuRef.current.style.backgroundColor = "#FFFFFF";
+  }
+
   return (
     <header className="flex items-center justify-between px-6 py-8 xl:justify-self-end xl:px-0 xl:py-0">
-      <button type="button" className="xl:hidden">
+      <button type="button" className="xl:hidden" onClick={openAppMenuHandler}>
         <span
           className={`block h-11 w-11 rounded-full border p-[10px] ${isUserInfoLoading ? "animate-pulse border-primary-300 text-primary-300" : "border-[#F5F5F7] text-secondary-300"}`}
         >
