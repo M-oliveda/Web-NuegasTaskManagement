@@ -6,7 +6,7 @@ export default function ActivityChart() {
   const [tasksByDate, setTasksByDate] = useState(null);
 
   useEffect(() => {
-    getTasksWithFilters(new Date().getFullYear(), "March").then((result) =>
+    getTasksWithFilters(new Date().getFullYear(), "September").then((result) =>
       setTasksByDate(() =>
         Object.keys(result.months[0].tasksByWeek).map((week) => ({
           x: week,
