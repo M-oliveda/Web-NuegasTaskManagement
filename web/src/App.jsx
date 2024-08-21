@@ -9,6 +9,7 @@ import UserContextProvider from "./components/UserContextProvider";
 import TasksPage from "./pages/taskspage";
 import DetailTaskPage from "./pages/taskspage/pages/detailstask";
 import MentorsPage from "./pages/mentors";
+import SettingsPage from "./pages/settingspage";
 
 const webRouter = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const webRouter = createBrowserRouter([
   {
     path: "/mentors",
     element: <MentorsPage />,
+  },
+  {
+    path: "/settings",
+    element: <SettingsPage />,
   },
   {
     path: "*",
