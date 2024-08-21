@@ -86,6 +86,9 @@ module.exports = {
       animation: {
         fadeout: "fadeout 2000ms ease-in-out forwards",
       },
+      gridTemplateColumns: {
+        main: "255px repeat(3,minmax(0px,1fr))",
+      },
     },
   },
   plugins: [
