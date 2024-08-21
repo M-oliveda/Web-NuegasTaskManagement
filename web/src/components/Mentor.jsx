@@ -70,6 +70,11 @@ export default function Mentor(props) {
           +Follow
         </button>
       </div>
+      {props.enableDescription && (
+        <p className="my-7 text-sm font-medium text-secondary-300">
+          {mentor.description}
+        </p>
+      )}
       <div className="mt-6 flex items-center">
         <p className="flex items-center space-x-2 text-sm font-medium text-secondary">
           {isMentorLoading ? (
