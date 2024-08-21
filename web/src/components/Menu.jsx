@@ -50,11 +50,11 @@ export default function Menu() {
         className="fixed left-0 top-0 z-10 flex h-full w-0 max-w-[252px] flex-col overflow-hidden border-r border-gray-100 bg-transparent p-0 duration-500 xl:col-start-1 xl:col-end-2 xl:w-auto xl:max-w-full xl:items-start xl:bg-white xl:p-6"
         ref={appMenuRef}
       >
-        <div>
+        <div className="flex items-center justify-between">
           <img src={Logo} alt="Application logo." width={188} />
           <button
             type="button"
-            className="xl:hidden"
+            className="absolute right-3 top-3 xl:hidden"
             onClick={minimizeMenuHandler}
           >
             <CloseCircle color="#8E92BC" />
