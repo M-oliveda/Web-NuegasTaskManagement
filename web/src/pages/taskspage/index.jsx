@@ -115,15 +115,18 @@ export default function TasksPage() {
     );
   } else {
     return (
-      <>
-        <TopBar
-          searchTaskValueMethod={setSearchTaskValue}
-          title="Detail Task"
-        />
-        <div className="bg-gray-100 p-6 xl:p-8">
-          <Outlet />
+      <div className="xl:grid-cols-main xl:grid">
+        <Menu />
+        <div className="xl:col-span-3 xl:col-start-2">
+          <TopBar
+            searchTaskValueMethod={setSearchTaskValue}
+            title="Detail Task"
+          />
+          <div className="bg-gray-100 p-6 xl:p-8">
+            <Outlet />
+          </div>
         </div>
-      </>
+      </div>
     );
   }
 }
