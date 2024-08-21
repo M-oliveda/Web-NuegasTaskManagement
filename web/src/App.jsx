@@ -10,6 +10,7 @@ import TasksPage from "./pages/taskspage";
 import DetailTaskPage from "./pages/taskspage/pages/detailstask";
 import MentorsPage from "./pages/mentors";
 import SettingsPage from "./pages/settingspage";
+import GlobalContextProvider from "./components/GlobalContextProvider";
 
 const webRouter = createBrowserRouter([
   {
@@ -44,9 +45,11 @@ const webRouter = createBrowserRouter([
 export default function App() {
   return (
     <StrictMode>
-      <UserContextProvider>
-        <RouterProvider router={webRouter} />
-      </UserContextProvider>
+      <GlobalContextProvider>
+        <UserContextProvider>
+          <RouterProvider router={webRouter} />
+        </UserContextProvider>
+      </GlobalContextProvider>
     </StrictMode>
   );
 }

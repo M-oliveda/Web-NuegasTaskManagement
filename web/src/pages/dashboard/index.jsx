@@ -7,6 +7,7 @@ import Activity from "./components/Activity";
 import MentorsSection from "./layouts/MentorsSection";
 import UpcomingTasksSection from "./layouts/UpcomingTasksSection";
 import TasksByDate from "./layouts/TasksByDate";
+import Menu from "../../components/Menu";
 
 export default function Dashboard() {
   const { user } = useContext(UserContext);
@@ -19,8 +20,9 @@ export default function Dashboard() {
   }, [user]);
 
   return (
-    <div className="xl:grid xl:grid-cols-4">
-      <div className="col-end-4 xl:col-start-1 xl:p-8">
+    <div className="xl:grid-cols-main xl:grid">
+      <Menu />
+      <div className="xl:col-start-2 xl:col-end-4 xl:p-8">
         <div className="xl:flex xl:items-center xl:justify-between">
           <div className="hidden xl:block">
             {isUserInfoLoading ? (
