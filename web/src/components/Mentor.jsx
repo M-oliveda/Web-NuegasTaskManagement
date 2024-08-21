@@ -72,7 +72,27 @@ export default function Mentor(props) {
       </div>
       {props.enableDescription && (
         <p className="my-7 text-sm font-medium text-secondary-300">
-          {mentor.description}
+          {isMentorLoading ? (
+            <>
+              <LoaderElement
+                type="rectangule"
+                backgroundColor="#546FFF"
+                width={295}
+              />
+              <LoaderElement
+                type="rectangule"
+                backgroundColor="#546FFF"
+                width={295}
+              />
+              <LoaderElement
+                type="rectangule"
+                backgroundColor="#546FFF"
+                width={295}
+              />
+            </>
+          ) : (
+            mentor.description
+          )}
         </p>
       )}
       <div className="mt-6 flex items-center">
