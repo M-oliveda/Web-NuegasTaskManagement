@@ -1,0 +1,205 @@
+[
+  {
+    "title": "Responsive Web Design Workshop",
+    "category": "Web Development",
+    "createdAt": "2024/03/15",
+    "timeLimit": "2024/06/10",
+    "studentsInvolved": 20,
+    "assets": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "video": "https://videos.pexels.com/video-files/5390861/5390861-sd_960_506_30fps.mp4",
+    "description": "Conduct a workshop on responsive web design, focusing on making websites adaptable to different screen sizes and devices.",
+    "steps": [
+      {
+        "name": "Creating workshop materials",
+        "isCompleted": true
+      },
+      {
+        "name": "Setting up demo projects",
+        "isCompleted": true
+      },
+      {
+        "name": "Conducting the workshop",
+        "isCompleted": true
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/31.jpg",
+      "https://randomuser.me/api/portraits/women/32.jpg"
+    ],
+    "duration": 180
+  },
+  {
+    "title": "Machine Learning Model Deployment",
+    "category": "Machine Learning",
+    "createdAt": "2024/04/12",
+    "timeLimit": "2024/05/05",
+    "studentsInvolved": 12,
+    "assets": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/7649279/7649279-sd_640_360_30fps.mp4",
+    "description": "Deploy a machine learning model to a cloud environment and make it accessible via an API for inference.",
+    "steps": [
+      {
+        "name": "Finalizing model training",
+        "isCompleted": true
+      },
+      {
+        "name": "Setting up cloud infrastructure",
+        "isCompleted": false
+      },
+      {
+        "name": "Deploying the model",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/41.jpg",
+      "https://randomuser.me/api/portraits/women/42.jpg"
+    ],
+    "duration": 240
+  },
+  {
+    "title": "Mobile App Performance Optimization",
+    "category": "Mobile Development",
+    "createdAt": "2024/09/10",
+    "timeLimit": "2024/09/30",
+    "studentsInvolved": 18,
+    "assets": "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5971077/5971077-sd_960_506_25fps.mp4",
+    "description": "Optimize the performance of a mobile application to reduce loading times and improve user experience.",
+    "steps": [
+      {
+        "name": "Analyzing current performance",
+        "isCompleted": true
+      },
+      {
+        "name": "Implementing optimizations",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing performance improvements",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/51.jpg",
+      "https://randomuser.me/api/portraits/women/52.jpg"
+    ],
+    "duration": 360
+  },
+  {
+    "title": "E-Commerce Website Backend Integration",
+    "category": "Backend Development",
+    "createdAt": "2024/03/01",
+    "timeLimit": "2024/07/25",
+    "studentsInvolved": 14,
+    "assets": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/6994619/6994619-sd_640_360_30fps.mp4",
+    "description": "Integrate a secure backend with an e-commerce website to handle user authentication, payments, and product management.",
+    "steps": [
+      {
+        "name": "Setting up the backend",
+        "isCompleted": true
+      },
+      {
+        "name": "Integrating payment gateway",
+        "isCompleted": true
+      },
+      {
+        "name": "Testing user authentication",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/61.jpg",
+      "https://randomuser.me/api/portraits/women/62.jpg"
+    ],
+    "duration": 420
+  },
+  {
+    "title": "Cloud Infrastructure Automation",
+    "category": "DevOps",
+    "createdAt": "2024/09/10",
+    "timeLimit": "2024/08/30",
+    "assets": "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/3129671/3129671-sd_640_360_30fps.mp4",
+    "studentsInvolved": 22,
+    "description": "Automate cloud infrastructure deployment and management using infrastructure-as-code tools like Terraform.",
+    "steps": [
+      {
+        "name": "Writing Terraform scripts",
+        "isCompleted": false
+      },
+      {
+        "name": "Testing automation workflows",
+        "isCompleted": false
+      },
+      {
+        "name": "Deploying to cloud",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/71.jpg",
+      "https://randomuser.me/api/portraits/women/72.jpg"
+    ],
+    "duration": 480
+  },
+  {
+    "title": "Cybersecurity Incident Response Plan",
+    "category": "Cybersecurity",
+    "createdAt": "2024/09/05",
+    "timeLimit": "2024/09/25",
+    "studentsInvolved": 15,
+    "assets": "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/6330779/6330779-sd_640_360_30fps.mp4",
+    "description": "Develop a comprehensive incident response plan to address potential cybersecurity threats and breaches.",
+    "steps": [
+      {
+        "name": "Identifying potential threats",
+        "isCompleted": false
+      },
+      {
+        "name": "Drafting response protocols",
+        "isCompleted": false
+      },
+      {
+        "name": "Simulating incident scenarios",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/81.jpg",
+      "https://randomuser.me/api/portraits/women/82.jpg"
+    ],
+    "duration": 300
+  },
+  {
+    "title": "Data Privacy Compliance Audit",
+    "category": "Compliance",
+    "createdAt": "2024/04/20",
+    "timeLimit": "2024/05/15",
+    "studentsInvolved": 17,
+    "assets": "https://images.pexels.com/photos/211151/pexels-photo-211151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/3130284/3130284-uhd_2560_1440_30fps.mp4",
+    "description": "Conduct an audit to ensure compliance with data privacy regulations like GDPR and CCPA.",
+    "steps": [
+      {
+        "name": "Reviewing existing policies",
+        "isCompleted": false
+      },
+      {
+        "name": "Identifying compliance gaps",
+        "isCompleted": false
+      },
+      {
+        "name": "Recommending policy changes",
+        "isCompleted": false
+      }
+    ],
+    "peopleAssigned": [
+      "https://randomuser.me/api/portraits/men/101.jpg",
+      "https://randomuser.me/api/portraits/women/102.jpg"
+    ],
+    "duration": 360
+  }
+]

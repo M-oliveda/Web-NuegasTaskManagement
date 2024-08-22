@@ -1,0 +1,9 @@
+# node-related folder:
+/node_modules/
+
+# project-related folders:
+/web/dist/
+/web/public/
+
+# parcel-related folders:
+/.parcel-cache/
