@@ -1,4 +1,10 @@
 export default function ButtonCheckbox(props) {
+  function checkRadioHandler(e) {
+    if (!e.target.checked) {
+      e.target.checked = true;
+    }
+  }
+
   return (
     <label
       htmlFor={`inputRadio${props.value}`}
@@ -13,7 +19,7 @@ export default function ButtonCheckbox(props) {
         value={props.value}
         name={props.name}
         checked={props.checked}
-        onChange={() => console.log("SELECTED!")}
+        onChange={checkRadioHandler}
         className="h-4 w-4 border-gray-300 bg-gray-100 text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
     </label>
